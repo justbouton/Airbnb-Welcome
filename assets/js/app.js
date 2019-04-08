@@ -1,13 +1,13 @@
 // Y axis scroll speed
-var velocity = 0.9;
+var velocity = 2.25;
 
 function update(){ 
     var pos = $(window).scrollTop(); 
-    $('.container').each(function() { 
+    $('.section').each(function() { 
         var $element = $(this);
         // subtract some from the height b/c of the padding
-        var height = $element.height()-18;
-        $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) + 'px'); 
+        var height = $element.height()+560;
+        $(this).css('backgroundPosition', '341px ' + Math.round((height + pos) / velocity) + 'px'); 
     }); 
 };
 
