@@ -6,7 +6,7 @@ function update(){
     $('.section').each(function() { 
         var $element = $(this);
         // subtract some from the height b/c of the padding
-        var height = $element.height()+560;
+        var height = $element.height()+575;
         $(this).css('backgroundPosition', '341px ' + Math.round((height + pos) / velocity) + 'px'); 
     }); 
 };
