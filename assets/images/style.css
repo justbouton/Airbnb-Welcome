@@ -21,7 +21,7 @@ img {
 
 }
 .section {
-    background-image: url("Background.jpg");
+    background-image: url("./Background.jpg");
     height: 600px;
     /* background-position: center; */
     background-position: 341px -1250px;
